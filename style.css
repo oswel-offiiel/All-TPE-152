@@ -1,0 +1,153 @@
+/* Réinitialisation de base pour éviter les marges/paddings par défaut */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* Police principale */
+
+}
+
+/* Style du header : fond sombre, éléments espacés */
+header {
+    background-color: #333333d4;
+    /* Couleur de fond du header */
+    display: flex;
+    /* Utilisation de Flexbox pour aligner les éléments */
+    justify-content: space-between;
+    /* Espace entre logo et menu */
+    align-items: center;
+    /* Alignement vertical centré */
+    padding: 10px 20px;
+    /* Espacement intérieur */
+    top: 0;
+    left: 0;
+    right: 0;
+    position: fixed;
+    z-index: 1000;
+}
+
+header .logo {
+    width: 100%;
+    height: 100px;
+}
+
+header img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Conteneur de la navigation */
+nav ul {
+    list-style: none;
+    /* Supprime les puces */
+    display: flex;
+    /* Aligne les éléments en ligne */
+    width: 100%;
+    text-align: center;
+}
+
+/* Élément de menu */
+nav ul li {
+    position: relative;
+    /* Pour positionner le sous-menu par rapport à cet élément */
+}
+
+/* Liens du menu principal */
+nav ul li a {
+    color: rgba(245, 245, 245, 0.806);
+    /* Couleur du texte */
+    padding: 14px 20px;
+    /* Espacement intérieur */
+    text-decoration: none;
+    /* Pas de soulignement */
+    display: block;
+    /* Occupe tout le bloc */
+}
+
+i {
+    color: rgb(21, 12, 199);
+}
+
+/* Effet de survol */
+nav ul li a:hover {
+    background-color: #111;
+    /* Couleur plus foncée au survol */
+}
+
+/* Sous-menu caché par défaut */
+.sous-menu {
+    display: none;
+    /* Caché au départ */
+    position: absolute;
+    /* Positionné sous l’élément parent */
+    top: 100%;
+    /* Juste en dessous du menu parent */
+    left: 0;
+    /* Aligné à gauche */
+    background-color: #11111175;
+    /* Fond du sous-menu */
+    min-width: 160px;
+    /* Largeur minimale */
+    z-index: 1;
+    /* S’assurer qu’il est au-dessus des autres éléments */
+}
+
+/* Style des liens du sous-menu */
+.sous-menu li a {
+    padding: 10px;
+    /* Espacement interne */
+}
+
+/* Afficher le sous-menu au survol de l’élément parent */
+nav ul li:hover .sous-menu {
+    display: block;
+    /* Devient visible */
+}
+
+/* banière */
+#home {
+    background-image: url(baniere.jpg);
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container {
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    background: linear-gradient(115deg, #4fcf70, #fad648, #a767e5, #12bcfe, #44ce7b);
+    ;
+}
+
+#home .container h1 {
+    font-size: 65px;
+    color: #fff;
+    border-bottom: 5px solid blue;
+
+}
+
+#home .container p {
+    color: #fff;
+    margin-top: 15px;
+}
+
+.container {
+    animation: animate 0.4s linear infinite;
+}
+
+@keyframes animate {
+    100% {
+        filter: hue-rotate(-360deg);
+    }
+
+}
