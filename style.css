@@ -151,3 +151,43 @@ nav ul li:hover .sous-menu {
     }
 
 }
+
+footer {
+    background-color: #111;
+    padding: 15px;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+form {
+    line-height: 45px;
+    width: 500PX;
+    background: #12bcfe;
+    justify-content: center;
+    display: grid;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+form .info {
+    display: flex;
+    gap: 5px;
+}
+
+.info input {
+    height: 40px;
+    width: 50%;
+    padding: 5px;
+}
+
+textarea {
+    width: 100%;
+    margin-top: 26px;
+    height: 90px;
+}
+
+form button {
+    height: 25px;
+    margin-top: 8px;
+}
