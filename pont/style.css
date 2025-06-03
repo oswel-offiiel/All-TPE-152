@@ -6,7 +6,8 @@
 }
 
 body {
-    background: #12bcfe;
+    background: #111;
+
     padding: 15px;
 
     justify-items: center;
@@ -60,6 +61,7 @@ button a {
     justify-content: center;
     flex-direction: column;
     width: 80%;
+    box-shadow: 0 0 31px #12bcfe;
 }
 
 #home h1 {

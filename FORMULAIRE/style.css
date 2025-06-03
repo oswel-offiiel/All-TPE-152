@@ -47,17 +47,16 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    background: #f7f7f7;
+    background: #111;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .wrapper {
-    background: #ffffff70;
+    background: #fff;
     width: 450px;
     border-radius: 16px;
-    box-shadow: 0 0 128px 0 rgba(0, 0, 0, 0.1),
-        0 32px 64px -48px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0 18px #12bcfe;
 }
 
 /* _______signup Form CSS code________ */
@@ -161,7 +160,7 @@ form .name-details .field:last-child {
 }
 
 .form .link a {
-    color: #333;
+    color: #12bcfe;
 }
 
 .form .link a:hover {

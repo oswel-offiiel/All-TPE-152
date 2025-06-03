@@ -1,8 +1,6 @@
 body {
-    background-image: url("images/back.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+    background: #111;
+    ;
 }
 
 .btn {
@@ -43,7 +41,7 @@ button a {
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-bottom: #ffffff solid;
+    border-bottom: #12bcfe solid;
     color: white;
 }
 
@@ -60,6 +58,7 @@ button a {
     display: flex;
     max-width: 1000px;
     margin: 0 auto;
+    box-shadow: 0 0 18px #12bcfe;
 
 }
 
@@ -80,7 +79,7 @@ button a {
 .cont-img img {
     width: 80%;
     border-radius: 10px;
-    box-shadow: #e8d9d9 2px 1px 17px 10px;
+    box-shadow: 0 0 18px #12bcfe;
 }
 
 .left-column h3 {
@@ -126,7 +125,7 @@ section {
 
 section h3 {
     color: #333;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #12bcfe;
     padding-bottom: 5px;
 }
 
@@ -146,7 +145,7 @@ main {
     text-align: center;
     margin-bottom: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-bottom: #ffffff solid;
+    border-bottom: #12bcfe solid;
     color: white;
 }
 
@@ -165,7 +164,7 @@ main {
     height: 300px;
     object-fit: fill;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgb(18, 236, 217);
+    box-shadow: 0 0 18px #12bcfe;
     transition: transform 0.5s ease-out;
 
 }
